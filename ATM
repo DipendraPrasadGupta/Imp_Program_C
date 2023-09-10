@@ -1,0 +1,90 @@
+#include<stdio.h>
+int main()
+{
+	int n,a,b,c,d,e;
+	printf("\n\tHealty Welcome To You In Apna ATM ");
+	printf("\n\n\t\tEnter Your Pin\n\n\t\t");
+	scanf("%d",&n);
+	if(n==2580)
+	{
+	printf("\n\t\tCongratulation!! You have Enterd Correct Pin\n\n\n");
+	printf("(1) Do You Want To Check Your Balance\t\t\t");
+	printf("(2) Do You Want To Check Your Monthly Transactions\n");
+	printf("\n\n(3) Do You Want To Withdraw Money\t\t\t");
+	printf("(4) Do You Want To Change Your Pin\n\n\n");
+	
+	scanf("%d",&a);
+	if(a==1)
+	{
+		printf("\n\t\tYour Balance");
+		printf("\n\n\tYour Total Balance is: 50,000");
+		printf("\n\n\tVisit Again !! Thank You Sir/Mam\n");
+	}
+	else if(a==2)
+	{
+		printf("\n\t\t\tYour Monthly Transactions\n\n\t");
+		printf("\t\t2022-9-15 Day Sunday You have to transact Rs. 2,000\n\t\t");
+		printf("\t2022-9-20 Day Wenesday You have to transact Rs. 10,000\n\t\t");
+		printf("\t2022-9-23 Day Friday You have to transact Rs. 5,000\n\t\t");
+		printf("\t2022-9-26 Day Monday You have to transact Rs. 10,000\n\t\t");
+		printf("\t2022-9-29 Day Wednesday You have to transact Rs. 15,000\n\t\t");
+		printf("\t2022-10-04 Day Tusday You have to transact Rs. 20,000\n\t\t");
+		printf("\n\t\t\t\tTotal You have To Transact Rs. 62,000\n\n\n");
+		
+			}
+	else if(a==3)
+	{
+		printf("\n\t\tWithdraw Money");
+		printf("\n\n\tPlease Choose How Much Money You Want To Withdraw\n");
+		printf("\n\t(1) 20,000\t\t");
+		printf("\t(2) 15,000\t\t");
+		printf("\n\n\t(3) 10,000\t\t");
+		printf("\t(4) 5,000\t\t");
+		printf("\n\n\t(5) 2,000\t\t");
+		printf("\t(6) 1,000\t\t\n\n");
+		
+		scanf("%d",&b);
+		if(b==1)
+		{
+			printf("\n\tYou Want To Withdraw Rs. 20,000 Thousands");
+			printf("\n\n\tFor Conformation Plese Response 1=Yes and 0=No\n\t");
+	    	
+	    	scanf("%d",&c);
+	    	if(c==1)
+	    	{
+	    		printf("Congratulation!! You Have Successfuly Withdraw Rs. 20,000 Thousands\n\t\n\n");
+			}
+			else if (c==0)
+			{
+			printf("\n\n\tYou Have To Choose NO That's Why Your Withdraw Is Failed !!");	
+			}
+			
+		}
+			}
+	else if(a==4)
+	{
+		printf("\n\tDo You Want To Change Your Pin");
+		printf("\n\n\tFor Conformation Plese Response 1=Yes and 0=No\n\t");
+		scanf("%d",&d);
+	    	if(d==1)
+	    	{
+	    		printf("\tEnetr Your New Pin\n\t\t");
+	    		scanf("%d",&e);
+	    		    printf("\n\tYour have successfully change your pin\n\n");
+			}
+			else if (d==0)
+			{
+			printf("\n\n\tYou Have To Choose NO That's Why Your Pin Change Process Is Failed !!");	
+			}
+	}
+	}
+	else
+	{
+		printf("\n\tSorry! You have enterd Worng Pin Please Enter Correct Pin\n\n\t\t\t");
+	}
+}
+
+
+
+
+
