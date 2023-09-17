@@ -1,0 +1,89 @@
+// calculator apps
+#include<stdio.h> 
+int main ()
+{
+	char c,d;
+	float rem;
+		int a;
+		float b;
+	printf("\n\t\tCalculator\n");
+	
+
+		printf("\n\tEnter Any One airthematic Operator\n\t");
+	scanf("%c",&c);
+
+	if (c=='+' || c=='-' || c=='*' || c=='/')
+	{
+		
+	printf("\n\t\tEnter First Value\n\t\t");
+	scanf("%d",&a);
+	printf("\t\tEnter Second Value\n\t\t");
+	scanf("%f",&b);
+	
+	
+	if(c=='+')
+	{
+		printf("\t\tYou Have To Choose Addition Opertor\n");
+	}
+	else if(c=='-')
+	{
+		printf("\t\tYou have To Choose Substraction  Operator\n");
+	}
+	else if(c=='*')
+	{
+		printf("\t\tYou Have To Choose Multiplication Opertor\n");
+	}
+	else if(c=='/')
+	{
+		printf("\t\tYou Have To Choose Division Operator\n");
+	}
+	
+
+	}
+else 
+{
+	printf("\n\tPlease Choose Only Arithematic Operator like(+, -, *, /)\n\n");	
+}
+	
+	switch(c)
+	{
+		case '+':
+			rem=a+b;
+			printf("\n\tThe Addition Of %d And %.0f is: %d + %.0f = %.0f\n",a,b,a,b,rem);
+			printf("\n\n\tHope You Have Enjoying Lots In This CalCulator Software\n\n");
+			break;
+			
+		
+		case '-':
+		rem=a-b;
+		printf("\n\tThe Substraction  Of %d And %.0f is: %d - %.0f = %.0f\n",a,b,a,b,rem);
+			printf("\n\n\tHope You Have Enjoying Lots In This CalCulator Software\n\n");
+			break;	
+			
+		case '*':
+		rem=a*b;
+		printf("\n\tThe Multiplication Of %d And %.0f is: %d * %.0f = %.2f\n",a,b,a,b,rem);
+			printf("\n\n\tHope You Have Enjoying Lots In This CalCulator Software\n\n");
+			break;
+			
+		case '/':
+				if(a==0)
+					{
+						printf("\n\t\tZero IS Not Supporting\n");
+					}
+		    	else{
+						
+					
+		            rem=a/b;
+		          printf("\n\tThe Division Of %d And %.0f is: %d / %.0f = %.2f\n",a,b,a,b,rem);
+		          	printf("\n\n\tHope You Have Enjoying Lots In This CalCulator Software\n\n");
+		        	break;
+		           	}	
+			
+	}
+		
+}
+
+
+
+
